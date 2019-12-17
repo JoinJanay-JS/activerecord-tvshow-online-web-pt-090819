@@ -1,9 +1,10 @@
 class CreateCandies < ActiveRecord::Migration[5.2]
   def change
-    create_table :candies do |t|
-      t.string :name
-      t.integer :calories
-      t.timestamps
+    create_table :shows do |s|
+      s.string :name
+      s.string :network
+      s.string :day
+      s.integer :rating
     end
   end
 end
